@@ -1,38 +1,193 @@
-.App {
-  text-align: center;
+.main {
+	height: 100%;
+	display: table;
+	width: 100%;
+	font-family: Montserrat;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper {
+	display: table-cell;
+	height: 100%;
+	vertical-align: middle;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.intro {
+	width: 900px;
+	margin: auto;
+	background-color: white;
+	float: center;
+	text-align: center;
+	min-height: 500px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.containerwrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	user-select: none;
 }
 
-.App-link {
-  color: #61dafb;
+.texthead {
+	font-weight: bold;
+	font-size: 40px;
+	color: #222222;
+	margin-top: 130px;
+	user-select: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.textsubhead {
+	font-size: 15px;
+	color: #222222;
+	margin: auto;
+	margin-top: 20px;
+	user-select: none;
+}
+
+.textinp {
+	display: block;
+	margin: 50px auto;
+	padding: 10px;
+	width: 260px;
+	font-family: Montserrat;
+	font-size: 15px;
+	outline: 0;
+	box-shadow: none;
+	border: 0;
+	border-bottom: 2px solid #b91372;
+	transition-duration: 1s;
+}
+
+.textinp:focus, .textinp:hover {
+	border-color: #6b0f1a;
+}
+
+.textinp:focus:invalid {
+	border-color: red;
+}
+
+.user {
+	font-size: 25px;
+	margin-top: 80px;
+}
+
+.repohome {
+	margin: 20px;
+	width: 680px;
+	max-height: 250px;
+	overflow-y: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: baseline;
+}
+
+.repo {
+	font-size: 15px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	width: 600px;
+	height: 20px;
+	padding: 15px;
+	cursor: pointer;
+	background-color: transparent;
+	transition: 0.5s;
+	color: #555555;
+}
+
+.repo:hover {
+	background-color: #EEEEEE;
+}
+
+.buttonsubmit {
+	display: block;
+	margin: 30px auto;
+	margin-top: 40px;
+	padding: 12px;
+	width: 140px;
+	font-family: Montserrat;
+	font-size: 15px;
+	outline: 0;
+	box-shadow: none;
+	border: 0;
+	color: white;
+	background-color: #63a4ff;
+	background-image: linear-gradient(315deg, #6b0f1a 0%, #b91372 74%);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08), 0 6px 20px 0 rgba(0, 0, 0, 0.08);
+	cursor: pointer;
+	transition-duration: 0.5s;
+}
+
+.buttonsubmit:hover {
+	box-shadow: none;
+	transform: scale(0.95);
+}
+
+.buttonsubmit::-moz-focus-inner {
+	border: 0;
+}
+
+.buttonmove {
+	display: block;
+	margin: 10px auto;
+	margin-top: 20px;
+	padding: 8px;
+	width: 80px;
+	font-family: Montserrat;
+	font-size: 10px;
+	font-weight: bold;
+	outline: none;
+	box-shadow: none;
+	border: none;
+	color: #555555;
+	background-color: #DDDDDD;
+	cursor: pointer;
+	transition-duration: 0.5s;
+}
+
+.buttonmove:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+	transform: scale(0.95);
+}
+
+.buttonmove::-moz-focus-inner {
+	border: 0;
+}
+
+.fade-appear {
+	opacity: 0;
+}
+
+.fade-appear.fade-appear-active {
+	opacity: 1;
+	transition: 1000ms ease-in-out;
+}
+
+@media screen and (max-width: 1000px) {
+
+	.intro {
+		width: 340px;
+		padding: 10px;
+	}
+	
+	.texthead {
+		font-size: 20px;
+	}
+
+	.textsubhead {
+		font-size: 10px;
+	}
+
+	.textinp{
+		width: 200px;
+		font-size: 15px;
+	}
+
+	.repohome {
+		width: 320px;
+	}
+
+	.repo {
+		width: 320px;
+	}
 }
