@@ -20,10 +20,10 @@ Dependencies: react, react-dom, react-router-dom, react-scripts, react-transitio
 <img src="https://i.imgur.com/AJ685uA.png" width="668" alt="Screenshot One">
 
 2. List of Repositories
-<img src="https://i.imgur.com/QQnFfhl.png" width="668" alt="Screenshot One">
+<img src="https://i.imgur.com/QQnFfhl.png" width="668" alt="Screenshot Two">
 
 3. List of Files in the selected Repository
-<img src="https://i.imgur.com/27bDh0z.png" width="668" alt="Screenshot One">
+<img src="https://i.imgur.com/27bDh0z.png" width="668" alt="Screenshot Three">
 
 ## Instructions
 
